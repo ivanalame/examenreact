@@ -46,6 +46,7 @@ export default class ModificarPersonaje extends Component {
     
     componentDidMount=()=>{
         this.loadSeries()
+        this.loadPersonajesSerie()
       
     }
     hacerCambios=(e)=>{
@@ -69,7 +70,7 @@ export default class ModificarPersonaje extends Component {
 
         <div className="form-group">
             <label htmlFor="serie">Seleccione una serie:</label>
-            <select onChange={this.loadPersonajesSerie} className="form-control" id="serie" ref={this.selectSerie}>
+            <select  className="form-control" id="serie" ref={this.selectSerie}>
                 {
                     this.state.statusSeries== true&&
                     (
