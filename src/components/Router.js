@@ -19,8 +19,8 @@ export default class Router extends Component {
     }
     return (
         <BrowserRouter>
+        <MenuSeries/>
             <Routes>
-                <Route path='/' element={<MenuSeries/>}></Route>
                 <Route path='/detalle/:id' element={<DetalleSerieElement/>}/>
                 <Route path='/personajes/:idserie' element={<PersonajesElement/>}/>
                 <Route path='/insertar' element={<InsertarPersonaje/>}></Route>
